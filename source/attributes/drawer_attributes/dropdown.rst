@@ -15,13 +15,13 @@ The values of the dropdown can be provided by a ``field``, ``property`` or ``fun
 
     public class NaughtyComponent : MonoBehaviour
     {
-        [Dropdown("intValues")]
+        [Dropdown(nameOf(intValues))]
         public int intValue;
 
-        [Dropdown("StringValues")]
+        [Dropdown(nameOf(StringValues))]
         public string stringValue;
 
-        [Dropdown("GetVectorValues")]
+        [Dropdown(nameOf(GetVectorValues))]
         public Vector3 vectorValue;
 
         private int[] intValues = new int[] { 1, 2, 3, 4, 5 };

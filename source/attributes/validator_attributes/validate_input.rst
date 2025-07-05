@@ -10,10 +10,10 @@ The most powerful ValidatorAttribute.
 
     public class NaughtyComponent : MonoBehaviour
     {
-        [ValidateInput("IsNotNull")]
+        [ValidateInput(nameOf(IsNotNull))]
         public Transform myTransform;
 
-        [ValidateInput("IsGreaterThanZero", "myInteger must be greater than zero")]
+        [ValidateInput(nameOf(IsGreaterThanZero), "myInteger must be greater than zero")]
         public int myInt;
 
         private bool IsNotNull(Transform tr)
